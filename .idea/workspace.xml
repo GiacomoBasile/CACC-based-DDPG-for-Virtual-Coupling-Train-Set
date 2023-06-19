@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90634b85-15d2-42ad-b7d6-b4c752c5b65c" name="Changes" comment="Initial commit">
+    <list default="true" id="90634b85-15d2-42ad-b7d6-b4c752c5b65c" name="Changes" comment="Version 1. Reward function correction and deleting useless code raw (cleaning)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDPG/reward.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualcopling.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtualcopling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,6 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -37,6 +35,9 @@
         <option name="url" value="https://github.com/GiacomoBasile/CACC-based-DDPG-for-Virtual-Coupling-Train-Set.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2RQCWVlyUc9aUwjPrVf0zp9o9ck" />
   <component name="ProjectViewState">
@@ -92,7 +93,7 @@
       <workItem from="1687173042028" duration="1156000" />
       <workItem from="1687174263626" duration="1356000" />
       <workItem from="1687176411478" duration="50000" />
-      <workItem from="1687179781166" duration="126000" />
+      <workItem from="1687179781166" duration="369000" />
     </task>
     <task id="LOCAL-00001" summary="Submition committing v1">
       <created>1687173521931</created>
@@ -115,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687174863112</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1687179968084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687179968084</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Version 1. Reward function correction and deleting useless code raw (cleaning)">
+      <created>1687180023676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687180023676</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +150,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Submition committing v1" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Version 1. Reward function correction and deleting useless code raw (cleaning)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1. Reward function correction and deleting useless code raw (cleaning)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CACC_based_DDPG_for_Virtual_Coupling_Train_Set$main.coverage" NAME="main Coverage Results" MODIFIED="1687174141893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

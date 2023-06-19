@@ -65,6 +65,7 @@ if __name__=='__main__':
         evaluate = False
 
     im_learning = False
+
     for i in range(n_games):
 
         observation = env.reset()
