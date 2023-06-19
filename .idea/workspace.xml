@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90634b85-15d2-42ad-b7d6-b4c752c5b65c" name="Changes" comment="Initial commit" />
+    <list default="true" id="90634b85-15d2-42ad-b7d6-b4c752c5b65c" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDPG/reward.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualcopling.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtualcopling.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -18,6 +23,20 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="98cdca14-e50b-4934-aef0-ca032839d739" />
+        <option name="url" value="https://github.com/GiacomoBasile/CACC-based-DDPG-for-Virtual-Coupling-Train-Set.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2RQCWVlyUc9aUwjPrVf0zp9o9ck" />
   <component name="ProjectViewState">
@@ -27,6 +46,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Giacomo/Git-CACC-based-DDPG-for-Virtual-Coupling-Train-Set&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -70,7 +90,9 @@
       <option name="presentableId" value="Default" />
       <updated>1687172949324</updated>
       <workItem from="1687173042028" duration="1156000" />
-      <workItem from="1687174263626" duration="576000" />
+      <workItem from="1687174263626" duration="1356000" />
+      <workItem from="1687176411478" duration="50000" />
+      <workItem from="1687179781166" duration="126000" />
     </task>
     <task id="LOCAL-00001" summary="Submition committing v1">
       <created>1687173521931</created>
@@ -86,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687174359071</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1687174863112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687174863112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

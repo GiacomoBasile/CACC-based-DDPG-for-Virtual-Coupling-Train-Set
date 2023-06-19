@@ -31,7 +31,7 @@ class VirtualCoplingEnv(gym.Env):
 
         return np.array([xl, vl, xc, vc], dtype=np.float32)
 
-        #return np.array([xl-xc,  vl-vc], dtype=np.float32)
+
 
 
     def step(self, action=None, ddes=5.0):
@@ -41,7 +41,6 @@ class VirtualCoplingEnv(gym.Env):
         cond, cond_, cond__ = '', '', ''
 
         self.leader_car.EuleranSolver(action[0])
-        #u = np.clip(action[1], -self.max_torque, self.max_torque)
         u = action[1]
         self.car.EuleranSolver(u)
 
@@ -69,46 +68,3 @@ class VirtualCoplingEnv(gym.Env):
         obs = np.array([xl, vl, xc, vc], dtype=np.float32)
 
         return obs, -costs, done, info+cond+cond_+cond__, u
-"""
-    def step(self, action=None, ddes=0):
-
-        done = False
-        info = ''
-        cond, cond_, cond__ = '', '', ''
-
-        self.leader_car.EuleranSolver(action[0])
-        u = np.clip(action[1], -self.max_torque, self.max_torque)
-        self.car.EuleranSolver(u)
-
-        xl, vl = self.leader_car.get_obs()
-        xc, vc = self.car.get_obs()
-
-        #print('x: ', [xl, xc])
-        #print('v: ', [vl, vc])
-
-        if np.abs(xl - xc)<ddes:
-            termm = 1000
-        else:
-            termm = 0
-
-        costs =  (vc/vl) * (xl - xc - ddes)**2 + termm #+ 0.5 * u**2 + (vc/vl) * (vl-vc)**2   +
-
-        if (xl-xc) <= ddes or vc < 0.0 or (xl-xc) > 600:
-            done = True
-            costs = 10000000
-
-            info = 'Worst error: '
-            cond = 'xl-xc < 0 (Accident)' * ((xl-xc) <= ddes)
-            cond_ = 'Ego car speed < 0' * (vc < 0.0)
-            cond__ = 'To far restart' * ((xl-xc) > 600)
-        #    print(cond, (xl-xc))
-        #    print(cond_, vc)
-        #    print(cond__, (xl-xc))
-        #    input('booh')
-
-        obs = np.array([xl, vl, xc, vc], dtype=np.float32)
-        #obs = np.array([xl-xc,  vl-vc], dtype=np.float32)
-        #input('wait')
-
-        return obs, -costs, done, info+cond+cond_+cond__, u
-"""
